@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4D21EAB11693038B71BB85 /* Pods_TestHB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDAC34ED0EA1DEB3F1EA12A /* Pods_TestHB.framework */; };
 		FF6C9A2621A7D37D00EF373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C9A2521A7D37D00EF373F /* AppDelegate.swift */; };
 		FF6C9A2821A7D37D00EF373F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C9A2721A7D37D00EF373F /* ViewController.swift */; };
 		FF6C9A2B21A7D37D00EF373F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6C9A2921A7D37D00EF373F /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BDAC34ED0EA1DEB3F1EA12A /* Pods_TestHB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestHB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A3E39A4E2600E3BDCE63D6 /* Pods-TestHB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHB.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestHB/Pods-TestHB.release.xcconfig"; sourceTree = "<group>"; };
+		F454BE58F6AEEC63C2D8A39C /* Pods-TestHB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestHB/Pods-TestHB.debug.xcconfig"; sourceTree = "<group>"; };
 		FF6C9A2221A7D37D00EF373F /* TestHB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6C9A2521A7D37D00EF373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6C9A2721A7D37D00EF373F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		FF6C9A2C21A7D37E00EF373F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF6C9A2F21A7D37E00EF373F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF6C9A3121A7D37E00EF373F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6C9A3721A7D39F00EF373F /* TestHB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHB.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4D21EAB11693038B71BB85 /* Pods_TestHB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A89F856857C5DF73103ABEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F454BE58F6AEEC63C2D8A39C /* Pods-TestHB.debug.xcconfig */,
+				87A3E39A4E2600E3BDCE63D6 /* Pods-TestHB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6A899CCF4326EBEE4F0C1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BDAC34ED0EA1DEB3F1EA12A /* Pods_TestHB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF6C9A1921A7D37D00EF373F = {
 			isa = PBXGroup;
 			children = (
 				FF6C9A2421A7D37D00EF373F /* TestHB */,
 				FF6C9A2321A7D37D00EF373F /* Products */,
+				5A89F856857C5DF73103ABEB /* Pods */,
+				6A6A899CCF4326EBEE4F0C1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +79,7 @@
 		FF6C9A2421A7D37D00EF373F /* TestHB */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C9A3721A7D39F00EF373F /* TestHB.entitlements */,
 				FF6C9A2521A7D37D00EF373F /* AppDelegate.swift */,
 				FF6C9A2721A7D37D00EF373F /* ViewController.swift */,
 				FF6C9A2921A7D37D00EF373F /* Main.storyboard */,
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF6C9A3421A7D37E00EF373F /* Build configuration list for PBXNativeTarget "TestHB" */;
 			buildPhases = (
+				7F89CFAB5966D63D39D9AD6E /* [CP] Check Pods Manifest.lock */,
 				FF6C9A1E21A7D37D00EF373F /* Sources */,
 				FF6C9A1F21A7D37D00EF373F /* Frameworks */,
 				FF6C9A2021A7D37D00EF373F /* Resources */,
+				F6AE20836828FD217898A03C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +124,14 @@
 				TargetAttributes = {
 					FF6C9A2121A7D37D00EF373F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +165,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F89CFAB5966D63D39D9AD6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestHB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6AE20836828FD217898A03C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestHB/Pods-TestHB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestHB/Pods-TestHB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF6C9A1E21A7D37D00EF373F /* Sources */ = {
@@ -280,8 +355,10 @@
 		};
 		FF6C9A3521A7D37E00EF373F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F454BE58F6AEEC63C2D8A39C /* Pods-TestHB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestHB/TestHB.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7273L693Z;
 				INFOPLIST_FILE = TestHB/Info.plist;
@@ -292,14 +369,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testhb.TestHB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FF6C9A3621A7D37E00EF373F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A3E39A4E2600E3BDCE63D6 /* Pods-TestHB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestHB/TestHB.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7273L693Z;
 				INFOPLIST_FILE = TestHB/Info.plist;
@@ -310,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testhb.TestHB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
